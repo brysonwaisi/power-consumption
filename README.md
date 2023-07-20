@@ -5,7 +5,7 @@
 ### Installation
 
 First, Clone the project
-`git clone `
+`git clone https://github.com/brysonwaisi/power-consumption.git`
 The requirements for running this project are `node`, `npm`, `django`
 
 - To install dependencies, please `npm install` in the project client folder to pull all the required client dependencies.

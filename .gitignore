@@ -1,0 +1,6 @@
+# venv 
+power/
+
+# code editor config
+.vscode/
+.env

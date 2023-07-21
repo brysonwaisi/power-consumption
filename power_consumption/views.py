@@ -33,7 +33,7 @@ def monitor_cpu(request):
         target_app_cpu_usage = None
         usage_text = ""
 
-    return render(request, 'cpu_monitor/monitor_cpu.html', {
+    return render(request, 'monitor_cpu.html', {
         'running_processes': running_processes,
         'app_name': app_name,
         'target_app_cpu_usage': target_app_cpu_usage,

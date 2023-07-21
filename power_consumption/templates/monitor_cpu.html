@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPU Monitor</title>
+    {% load static %}
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1 class='header'>Running Processes</h1>
+    <form method="post">
+        {% csrf_token %}
+        <select name="app_name" class='custom-select'>
+            {% for process in running_processes %}
+            <option value="{{ process }}">{{ process }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Monitor Consumption">
+    </form>
+
+    {% if app_name and target_app_cpu_usage is not None %}
+        <h2 class='usage'>CPU Usage for {{ app_name }}:</h2>
+        <p class='cpu-usage'>{{ usage_text }}</p>
+    {% else %}
+        {% if usage_text %}
+            <p class='mem-usage'>{{ usage_text }}</p>
+        {% endif %}
+    {% endif %}
+   
+</body>
+</html>

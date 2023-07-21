@@ -1,6 +1,6 @@
 ## CPU Usage Monitor
 
-'' add image''
+![cpu]()
 
 ### Installation
 

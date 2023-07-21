@@ -1,6 +1,6 @@
 ## CPU Usage Monitor
 
-![cpu]()
+![cpu](https://github.com/brysonwaisi/power-consumption/blob/main/power_consumption/static/images/cpu.png)
 
 ### Installation
 
